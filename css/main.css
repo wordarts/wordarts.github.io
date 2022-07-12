@@ -1,0 +1,172 @@
+/*----------------------------------------------
+0. CSS Reset
+----------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*----------------------------------------------
+1. Universal Styles
+----------------------------------------------*/
+body {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+
+
+.home-page {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+/*----------------------------------------------
+2. Navbar
+----------------------------------------------*/
+nav {
+    background-color: black;
+}
+
+.hamburger {
+    font-style: normal;
+}
+
+.logo {
+    height: 42px;
+    margin: 11px 0px;
+}
+
+.limit-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul a:hover {
+    animation-name: pill-hover;
+    animation-duration: .1s;
+    color: darkgray;
+}
+
+@keyframes pill-hover {
+    0% { 
+        color: white;
+    }
+    100% {
+        color: darkgray;
+    }
+}
+
+.fa-caret-down {
+    margin-left: 3px;
+    height: 67px;
+    transform: translateY(3px) scale(0.7);
+}
+
+/* .gallery-button {
+    transform: translateY(-3px);
+} */
+
+.gallery-dropdown {
+    display: none;
+    border: 1px solid black;
+    border-radius: 1px;
+    position: absolute;
+    background-color: rgb(45, 45, 45);
+    padding: 5px 8px 8px 5px;
+    font-size: 16px;
+    transform: translateY(-1px);
+}
+
+.gallery-dropdown ul li {
+    margin: 10px;
+}
+
+.gallery-dropdown ul a {
+    color: white;
+}
+
+.gallery-dropdown ul a:hover {
+    color: darkgray;
+}
+
+/* Sidenav */
+
+.sidenav {
+    background-color: rgb(200, 200, 200);
+}
+
+.sidenav li > a {
+    color: black;
+}
+
+.side-drop-open {
+    animation-name: sideTransition;
+    animation-duration: 2s;
+    display: inline-block;
+}
+
+.side-drop-close {
+    animation-name: sideTransition;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+
+.side-drop-disappear {
+    display: none;
+}
+
+@keyframes sideTransition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul li a.drop-menu-item {
+    font-weight: 300;
+    transform: translateX(5px);
+    font-size: 14px;
+}
+
+.menu-item-open {
+    animation-name: itemTransition;
+    animation-duration: 2s;
+}
+
+.menu-item-close {
+    animation-name: itemTransition;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+
+@keyframes itemTransition {
+    from {
+        height: 0px;
+        font-size: 2px;
+    }
+    to {
+        height: 48px;
+        font-size: 14px;
+    }
+}
+
+/*----------------------------------------------
+3. Homepage
+----------------------------------------------*/
+.home-box {
+    padding: 15px;
+}
+
+.home-title {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home-page p {
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 1.6;
+}

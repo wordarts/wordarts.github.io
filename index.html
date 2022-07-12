@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Arts</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/materialize.css"></link>
+    <link rel="stylesheet" href="css/main.css"></link>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/451f2e9856.js" crossorigin="anonymous"></script>
+</head>
+<body class="home-page">
+    
+    <nav>
+        <div class="nav-wrapper limit-width">
+            <a href="#" class="brand-logo"><img class="logo" src="imgs/logo.webp"></img></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars hamburger"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artist</a></li>
+                <li class="gallery-listitem">
+                    <a class="gallery-button" href="#">
+                        Gallery
+                        <!-- <i class="fa fa-caret-down"></i> -->
+                    </a>
+                </li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="gallery-dropdown">
+        <ul>
+            <li><a href="#">Celebrity Series</a></li>
+            <li><a href="#">Madam Series</a></li>
+        </ul>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artist</a></li>
+        <li>
+            <a onclick="sideGalleryDropDown()" href="#">Gallery</a>
+            
+            <ul class="side-drop-menu side-drop-close side-drop-disappear">
+                <li><a class="drop-menu-item menu-item-close" href="#">Celebrity Series</a></li>
+                <li><a class="drop-menu-item menu-item-close" href="#">Madam Series</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="center-align home-box">
+        <div class="home-title">Celebrity Series</div>
+
+        <p>
+            June & July Art Exhibit<br>
+                Collins Pub<br>
+            526 2nd Avenue Seattle WA
+        </p>
+
+        <p>
+            August 2022 Art Exhibit<br>
+                Gary Manual Salon<br>
+            528 2nd Avenue Seattle WA
+        </p>
+    </div>
+    
+
+
+
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
