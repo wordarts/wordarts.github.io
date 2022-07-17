@@ -99,6 +99,13 @@ nav ul a:hover {
     color: black;
 }
 
+.sidenav li > a > i.fa-caret-down {
+    display: inline;
+    color: black;
+    float: none;
+    margin-left: 5px;
+}
+
 .side-drop-open {
     animation-name: sideTransition;
     animation-duration: 2s;

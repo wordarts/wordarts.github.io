@@ -58,35 +58,40 @@ function galleryMenuCheck() {
   if (!button.isMouseOver && !dropdown.isMouseOver) {
     galleryMenuHide();
   } 
+
 }
+
+var timeoutId = 0;
 
 function sideGalleryDropDown() {
   let menu = document.querySelector(".side-drop-menu");
+  let menuItems = document.querySelectorAll(".drop-menu-item");
+
   if (menu.classList.contains("side-drop-close")) {
     menu.classList.remove("side-drop-close");
     menu.classList.remove("side-drop-disappear");
     menu.classList.add("side-drop-open");
+
+    menuItems.forEach((item) => {
+      item.classList.remove("menu-item-close");
+      item.classList.add("menu-item-open");
+    })
   }
   else if (menu.classList.contains("side-drop-open")) {
     menu.classList.remove("side-drop-open");
     menu.classList.add("side-drop-close");
-    setTimeout(sideGalleryDisappear, 600);
-  }
 
-  let menuItems = document.querySelectorAll(".drop-menu-item");
-  menuItems.forEach((item) => {
-    if (item.classList.contains("menu-item-close")) {
-      item.classList.remove("menu-item-close");
-      item.classList.add("menu-item-open");
-    } 
-    else if (item.classList.contains("menu-item-open")) {
+    menuItems.forEach((item) => {
       item.classList.remove("menu-item-open");
       item.classList.add("menu-item-close");
-    }
-  })
+    })
+
+    timeoutId = setTimeout(sideGalleryDisappear, 300);
+  }
 }
 
 function sideGalleryDisappear() {
   let menu = document.querySelector(".side-drop-menu");
   menu.classList.add("side-drop-disappear");
+  clearTimeout(timeoutId);
 }
