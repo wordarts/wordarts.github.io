@@ -225,7 +225,7 @@ ul li a.drop-menu-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 5%;
+    padding: 15px 10px;
 }
 
 .fa-facebook {
