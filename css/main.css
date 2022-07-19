@@ -97,6 +97,10 @@ nav ul a.icon {
     margin: 0px 20px;
 }
 
+nav ul a.first-icon {
+    margin-left: 60px;
+}
+
 nav ul a i.fa-facebook{
     background-color: black;
     margin: 0px -10px;
