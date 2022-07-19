@@ -89,6 +89,42 @@ nav ul a:hover {
     color: darkgray;
 }
 
+nav ul a.icon {
+    display: inline;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px 20px;
+}
+
+nav ul a i.fa-facebook{
+    background-color: black;
+    margin: 0px -10px;
+    padding: 0px;
+}
+
+nav ul a i.fa-facebook::before {
+    color: darkblue;
+    padding: 2px 2.5px 0px 8px;
+    border-radius: 2px;
+    background-color: white;
+    width: 10px;
+}
+
+nav ul a i.fa-linkedin{
+    background-color: black;
+    margin: 0px -10px;
+    padding: 0px;
+}
+
+nav ul a i.fa-linkedin::before {
+    color: rgb(78, 113, 249);
+    padding: 2px 4px 0px;
+    border-radius: 2px;
+    background-color: white;
+    width: 10px;
+}
+
 /* Sidenav */
 
 .sidenav {
