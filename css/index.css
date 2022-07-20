@@ -15,15 +15,14 @@
 }  
 
 .stage-box {
-    display: flex;
     background-color: black;
-    height: 800px;
+    height: 680px;
 }
 
 #stage {
     display: block;
     margin: 10px auto;
-    width: 588px;
+    width: 500px;
     background-color: black;
     z-index: 100;
 }
@@ -31,14 +30,40 @@
 #stage a {
     position: absolute;
     display: inline-block;
-    width: 588px;
+    width: fit-content;
 }
 
 #stage a img {
     background: black;
     padding: 15px 0px;
     display: inline;
-    width: 100%;
+    width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    #stage {
+        display: block;
+        margin: 10px auto;
+        width: 400px;
+        background-color: black;
+        z-index: 100;
+    }
+    #stage a img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #stage {
+        display: block;
+        margin: 10px auto;
+        width: 350px;
+        background-color: black;
+        z-index: 100;
+    }
+    #stage a img {
+        width: 350px;
+    }
 }
 
 #stage a:nth-of-type(1) {

@@ -19,6 +19,7 @@ body {
     color: white;
     font-size: 15px;
     font-weight: 400;
+    /* width: fit-content; */
 }
 /*----------------------------------------------
 2. Navbar
@@ -203,6 +204,10 @@ ul li a.drop-menu-item {
 3. Footer
 ----------------------------------------------*/
 
+.footer-box {
+    width: 100%;
+}
+
 .top-footer {
     background-color: white;
     display: flex;
@@ -214,6 +219,20 @@ ul li a.drop-menu-item {
 .footer-img {
     width: 300px;
     margin: 5px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-img {
+        width: 200px;
+        margin: 5px 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-img {
+        width: 100px;
+        margin: 5px 0px;
+    }
 }
 
 .mid-footer {
