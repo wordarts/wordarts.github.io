@@ -16,7 +16,7 @@
 
 .stage-box {
     background-color: black;
-    height: 680px;
+    height: 710px;
 }
 
 #stage {
@@ -41,6 +41,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .stage-box {
+        background-color: black;
+        height: 570px;
+    }   
     #stage {
         display: block;
         margin: 10px auto;
@@ -54,6 +58,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .stage-box {
+        background-color: black;
+        height: 500px;
+    }   
     #stage {
         display: block;
         margin: 10px auto;
