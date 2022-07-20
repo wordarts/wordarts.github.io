@@ -212,7 +212,7 @@ ul li a.drop-menu-item {
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 15%;
 }
 
@@ -230,7 +230,7 @@ ul li a.drop-menu-item {
 
 @media only screen and (max-width: 500px) {
     .footer-img {
-        width: 100px;
+        width: 140px;
         margin: 5px 0px;
     }
 }
