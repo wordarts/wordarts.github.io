@@ -65,12 +65,12 @@
     #stage {
         display: block;
         margin: 10px auto;
-        width: 350px;
+        width: 340px;
         background-color: black;
         z-index: 100;
     }
     #stage a img {
-        width: 350px;
+        width: 340px;
     }
 }
 
