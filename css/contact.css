@@ -7,3 +7,17 @@
     z-index: 100;
 }
 
+button[type=submit] {
+    background-color: rgb(80, 125, 238);
+    color: rgb(245, 245, 245);
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-left: 5px;
+    font-size: 16px;
+    box-shadow: 1px 1px 2px .5px rgb(163, 163, 163);
+}
+button[type=submit]:hover {
+    background-color: rgb(73, 115, 220);
+    color: rgb(225, 225, 225);
+    box-shadow: 0px 0px 2px .5px rgb(163, 163, 163);
+}

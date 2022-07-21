@@ -1,6 +1,6 @@
-var foot = document.querySelector(".footer-box");
-var rect = foot.getBoundingClientRect();
-var bottom = rect.bottom;
+const foot = document.querySelector(".footer-box");
+const rect = foot.getBoundingClientRect();
+const bottom = rect.bottom;
 
 console.log(bottom);
 
