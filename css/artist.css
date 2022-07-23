@@ -4,7 +4,7 @@ body {
 }
 
 .artist-image {
-    height: 650px;
+    height: 600px;
     margin: 50px auto 20px;
 }
 
@@ -23,7 +23,19 @@ body {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
+    .image-column {
+        position: relative;
+    }
+
+    .artist-image {
+        height: 450px;
+        margin: 50px auto 0px;
+    }
+
+}
+
+@media only screen and (max-width: 499px) {
     .image-column {
         position: relative;
     }
