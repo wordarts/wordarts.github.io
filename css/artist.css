@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.artist-image {
+    height: 650px;
+    margin: 50px auto 20px;
+}
+
+.artist-text {
+    margin: 50px auto;
+}
+
+.image-column {
+    position: fixed;
+}
+
+@media only screen and (min-width: 1500px) {
+    .artist-image {
+        height: 100%;
+        margin: 50px auto 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .image-column {
+        position: relative;
+    }
+
+    .artist-image {
+        height: 300px;
+        margin: 50px auto 0px;
+    }
+
+    .artist-text {
+        margin: 30px auto;
+    }
+}
+
+p {
+    text-align: left;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+
+p:first-of-type {
+    margin-top: 40px;
+}
