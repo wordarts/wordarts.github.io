@@ -95,3 +95,14 @@ p:first-of-type {
 ul.artist-list li {
     list-style-type: disc;
 }
+
+@keyframes img-transition {
+    from {}
+    to {transform: translateY(0px);}
+}
+
+.transition {
+    animation-name: img-transition;
+    animation-duration: 2s;
+    transform: translateY(0px);
+}
