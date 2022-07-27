@@ -75,23 +75,23 @@
             <form class="col s12" method="POST" action="https://formspree.io/f/xbjwnnjb">
               <div class="row">
                 <div class="input-field col s6">
-                  <input required placeholder="John Doe" id="name" type="text" class="validate">
+                  <input required placeholder="John Doe" id="name" type="text" name="name" class="validate">
                   <label for="name">Name</label>
                 </div>
                 <div class="input-field col s6">
-                  <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="JDoe@johndoe.com" id="last_name" type="email" class="validate">
+                  <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="JDoe@johndoe.com" id="last_name" type="email" name="email" class="validate">
                   <label for="last_name">Email</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input required placeholder="Inquiring about painting..." id="subject" type="text" class="validate">
+                  <input required placeholder="Inquiring about painting..." id="subject" type="text" name="subject" class="validate">
                   <label for="subject">Subject</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea required minlength="10" placeholder="I like the portrait of Scarlett Johansson..." id="message" type="text" class="materialize-textarea"></textarea>
+                  <textarea required minlength="10" placeholder="I like the portrait of Scarlett Johansson..." id="message" type="text" name="message" class="materialize-textarea"></textarea>
                   <label for="message">Message</label>
                 </div>
               </div>
