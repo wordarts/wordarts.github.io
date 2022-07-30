@@ -1,6 +1,6 @@
 img.celebrity-img {
     width: 400px;
-    margin: 40px auto;
+    margin: 40px auto 30px;
     padding: 0px 5px;
 }
 
@@ -13,6 +13,11 @@ img.celebrity-img:hover {
     animation-name: enlarge;
     animation-duration: .5s;
     transform: scale(102%);
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .text-column {
