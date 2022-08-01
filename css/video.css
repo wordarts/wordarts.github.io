@@ -8,6 +8,10 @@
     margin: 20px auto;
 }
 
+.non-link-header {
+    margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 800px) {
     .video-size {
         width: 500px;
